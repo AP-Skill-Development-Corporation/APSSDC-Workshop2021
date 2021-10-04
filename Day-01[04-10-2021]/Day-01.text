@@ -1,0 +1,175 @@
+
+Day-01[04-10-2021]:
+==================
+	
+	Good Evening to All
+
+	Python OOPS:
+	============
+	class,object,constructor,inhertiance,packages and modules
+
+
+	Python:
+	=======
+	cmd => python --version => 3.7.3
+
+	Class:
+	======
+		-> blueprint of an object
+		-> collection of variables,methods
+		-> attributes
+
+	Syntax for function:
+	====================
+	def function_name(arguments):
+		//stmnts,
+		return return_value
+
+	Syntax for Class:
+	=================
+
+	class classname:
+		//variables
+		def functionname(arguments):
+			//stmnts
+			return return_value
+	Inner of class can be defined as a method not a function
+
+	Object:
+	=======
+		-> Instance of a class
+
+	Constructor:
+	===========	
+		- 2 types => default constructor
+				  => parameterised constructor
+
+		Default constructor:
+		===================
+			-> __init__ => constructor
+			-> "self"
+
+		syntax:
+		======
+
+		class Classname():
+			variables
+			def __init__(self):
+				print("this is sample")
+
+		classname(20)
+
+
+	Packages and Modules:
+	=====================
+
+	Packages:
+	=========
+		-> folder
+		-> number of files
+
+	Module:
+	=======
+		-> .extension => .py
+		-> number of class,methods,functions,variables
+
+
+	Package: => work => person.py 
+	Module: => .py => 
+
+	Module outside: import 
+	Package module: from packagename import modulename
+					from packagename.modulename import attributes
+					from packagename import modulename as aliasname
+
+	Inheritance:
+	============
+	-> acquring the properties from parent to child
+		- single 
+
+	class Person():
+		a,b = 20,56.00
+
+	class BasePerson(Person):
+		c,d = 'tarun','pavan'
+
+	g = Person
+	g.a,g.b
+
+	h = BasePerson
+	h.a,h.b,h.c,h.d
+
+Django:
+=======
+	
+	Python
+	Sublime
+
+	Python Check:
+	=============
+		-> cmd => python --version
+
+	Django installation:
+	====================
+		-> cmd 
+		-> pip install django => Latest Version
+		-> pip install django == 3.0
+
+	Unistallation:
+	==============
+		-> cmd
+		-> pip uninstall django
+		-> pip uninstall django==3.0
+
+	Django version check:
+	=====================
+		-> cmd
+		-> django-admin --version
+		-> python django-admin --version
+				(or)
+		-> python shell
+		-> import django
+		-> print(django.get_version())
+		-> print(django.__version__)
+
+	Project Creation:
+	=================
+		-> cmd
+		-> django-admin startproject projectname
+		ex: django-admin startproject Employeedetails
+		-> we need to navigate inner of project folder where we can find manage.py file
+
+	Project Execution:
+	==================
+		-> cmd
+		-> We need to navigate to a location where we can find manage.py file
+		-> manage.py runserver
+		-> python manage.py runserver [error]
+		-> 127.0.0.1:8000 -> browser url
+		-> 127.0.0.1 => localhost
+	
+	To Stop a Server:
+	=================
+		-> cntrl + c
+
+	Port Numbers Blocked:
+	=====================
+		-> cmd
+		-> manage.py runserver 1234
+		-> same port number should be accessed on browser url
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
