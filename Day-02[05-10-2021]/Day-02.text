@@ -1,0 +1,79 @@
+
+Day-02[05-10-2021]:
+==================
+	Good Evening to All
+
+	Projectname
+	-----------
+		SameProjectfolder => Admin App
+
+		- init -> python interpreter consider init as python file
+		- asgi -> Asychronous Gateway Interface => Deployment state
+		- settings -> All type of configurations are to be done here
+		- urls -> To check whether the url is existing in urls.py
+		- wsgi -> Web Socket Gateway Interface => deployment
+
+	Own App Creation[User creation App]:
+	====================================
+		-> cmd
+		-> django-admin startapp appname
+		ex: django-admin startapp demo
+
+		- init -> python interpreter consider init as python file
+		- admin -> To configure users table to display for admin
+		- apps -> app configuration 
+		- models -> user table,columns,data type,relationship
+		- tests -> unit testing,blackbox testing
+		- views -> Logic is to be implemented in this file.
+
+	MVC and MVT:
+	============
+	M => Model => Database
+	V => view => .html,.css,.javascript
+	C => Controller => Logic [.php, .java]
+	----------------
+	M => Model => Databse
+	V => View => 
+			urls -> check ,
+			views -> Logic 
+			=> Controller [Logic]
+	T => Template => .html[templates], [.css,.javascript => static]
+	----------------
+
+	=> Our App name shuld be configured in Admin app
+	=> settings.py
+		-> Installed apps = [appname]
+	=> urls.py
+	=> logic => response
+
+	urls.py:
+	========
+	from packagename import modulename  
+	path('urlname/',modulename.functionname,name="userdefinedname"),
+
+
+	render:
+	=======
+	render(self,'path of .html file',{key:value})
+
+	.html file:
+	===========
+	-> We have to create a folder named as "templates" in our app[Userapp]
+
+	DTL => Django Template Language:
+	================================
+
+	Variable: {{variablename}}
+
+	Flow control:
+	=============
+	urls -> views [HttpResponse]
+	urls -> views -> .html[Template][inline]
+	
+
+
+
+
+
+
+
