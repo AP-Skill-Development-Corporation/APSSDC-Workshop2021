@@ -1,0 +1,17 @@
+form
+{
+	margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    /*background: cadetblue;*/
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+h2
+{
+	padding:5px;
+	background-color: black;
+	color:white;
+	text-align: center;
+}

@@ -1,0 +1,97 @@
+
+Day-03[06-10-2021]:
+===================
+	
+	Good Evening to All.
+
+	html,Inline css,
+	Javascript => templates
+
+	static:
+	=======
+		External css,js,jquery,audio,video
+
+	url => views => HttpResponse
+	url => views => template
+	url => views => template => views => template
+
+	Form:
+	=====
+	External css
+	DTL => Variable => {{}}
+	=> {% load static %}
+	=> link href="{% static 'css/mystyle.css' %}"
+
+	GET and POST:
+	=============
+	GET:
+	====
+		=> By default get will access the form data
+		=> Sensitive information will be displayed in browser url
+		=> Number of character [Limit]
+
+	POST:
+	=====
+		=> Sensitive information will be hidden
+		=> No limit
+
+	DTL => form => submit => {% csrf_token %}
+
+	Bootstrap-4:
+	============
+		Online Mode
+		Offline Mode
+
+	{% include '' %} -> constant
+	{% extends '' %} -> previous.html
+
+	Reference:
+	==========
+	<a href="{% url 'ind' %}">Home</a>
+
+	Bootstrap-3:
+	============
+	class="form-control"
+	class="text-center"
+
+	Boostrap-4:
+	===========
+	class="form-control text-center"
+
+	Margins:
+	========
+	m-2
+		margin-top = 2
+		margin-left = 2
+		margin-right = 2
+		margin-bottom = 2
+
+	mx-2
+		margin-left = 2
+		margin-right = 2
+
+	my-2
+		margin-top = 2
+		margin-bottom = 2
+
+	ml-2 => margin-left = 2
+	mr-2 => margin-right = 2
+	mt-2 => margin-top = 2
+	mb-2 => margin-bottom = 2
+
+	p-2 => padding = 2
+
+	Colors:
+	=======
+		primary,secondary,dark,white,light,success,warning,danger
+		=> container,jumbotron,heading,button
+
+	Devices:
+	========
+	xm => very small
+	sm => small 
+	md => medium
+	lg => large
+	xl => Extra Large
+
+
