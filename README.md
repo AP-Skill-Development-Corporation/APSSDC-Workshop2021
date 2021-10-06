@@ -12,3 +12,10 @@
   - Html tags,css styling and javascript in HttpResponse
   - Html file accessing in render url -> view -> templates
   - Recording Video Link [Day-02](https://transcripts.gotomeeting.com/#/s/cde946c198ad1c28008a2f91b4a0c5120df17f2844d2285fc7506e546da350d0)
+
+## Day-03[06-10-2021]:
+  - Javascript access in html file
+  - External css,javascript access by using static folder
+  - Bootstrap introduction,accessing through online mode
+  - Grid systems,margin,padding etc.,
+  - Recording Video Link [Day-03](https://transcripts.gotomeeting.com/#/s/79caa0525cac068e76aee807b7e7f2b9bfc410091a93a830e5efaede4ab0984f)
