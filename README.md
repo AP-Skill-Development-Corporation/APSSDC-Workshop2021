@@ -19,3 +19,10 @@
   - Bootstrap introduction,accessing through online mode
   - Grid systems,margin,padding etc.,
   - Recording Video Link [Day-03](https://transcripts.gotomeeting.com/#/s/79caa0525cac068e76aee807b7e7f2b9bfc410091a93a830e5efaede4ab0984f)
+
+## Day-04[07-10-2021]:
+  - User Registration and Login form by using Bootstrap-4
+  - Model Creation,Makemigrations and migrate
+  - ORM Queries execution in shell
+  - Create and Read Operations for sample model class
+  - Recording Video Link [Day-04](https://transcripts.gotomeeting.com/#/s/f0ffea710133737f163e18b7a1dac0ca11cf98724c9be2056b70de303c54d7c6)
