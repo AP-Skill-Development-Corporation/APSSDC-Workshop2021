@@ -1,0 +1,102 @@
+Day-04[07-10-2021]:
+===================
+	
+	Good Evening to All.
+	
+	Bootstrap-4:
+	============
+		-> online
+
+	CRUD Operations:
+	================
+
+		models.py:
+		----------
+			table,field,datatype
+			Text => CharField
+			Numbers => IntegerField
+
+
+		class Classname(models.Model):
+			username = models.CharField(null)	
+
+	db browser => installation
+		Sqlite3 => table,fields,datatypes
+
+	Tables Create:
+	===============
+	=> server stop
+	=> manage.py makemigrations
+		migrations:
+		=> models.py
+		=> tablename,fields
+	=> oops => tablename,fields => Interface 
+	=> migrations => 0001.initial.py => 0002.alter.py
+	=> ORM => Sql
+	=> manage.py migrate
+
+	Object Relational Mapper => SQl
+
+
+	CRUD Operations:
+	================
+	C -> Create
+	R -> Read
+	U -> Update
+	D -> Delete
+
+	Create
+	=======
+
+	single Record:
+	==============
+	n = classname(ename="rajesh")
+	n.save()
+	print(n)
+
+	m = classname.object.create(ename="kishore")
+	print(m)
+
+	bulk users:
+
+	k = classname.objects.bulk_create([
+		classname(ename="sdfsdf"),
+		classname(ename="sdfsdf")
+	])
+
+	Read
+	======
+
+	get,filter,loop
+
+	get: => unique
+	duplicates record => Doesnt allow
+
+
+	filter => duplicates
+	It displays empty value when the record is not in a database
+
+	Loop
+
+	for j in iterator:
+		print(iterationvaraible.fieldname)
+
+	first:
+
+	n = classname.objects.all().first()
+
+	n = classname.objects.all().[0].fieldname
+
+	last:
+	n = classname.objects.all().last()
+
+	n = classname.objects.all().[startindex:endindex]
+
+	n = classname.objects.all()[::-1][0].username
+
+	
+
+
+
+
+
