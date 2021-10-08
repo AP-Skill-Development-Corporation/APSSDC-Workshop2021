@@ -1,0 +1,42 @@
+{% extends 'ty/header.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-md card border rounded shadow mx-2">
+			<div class="card-body">
+				<h3 class="bg-primary text-light p-2 border rounded text-center">Registration</h3>
+				<form>
+					<div class="row my-2">
+						<div class="col-md">
+							<input type="text" name="fname" class="form-control" placeholder="First Name">
+						</div>
+						<div class="col-md">
+							<input type="text" name="lname" class="form-control" placeholder="Last Name"> 
+						</div>
+					</div>
+					<input type="text" name="uname" class="form-control my-2" placeholder="Enter Username">
+					<input type="password" name="upd" class="form-control my-2" placeholder="Enter Your Password">
+					<div class="row">
+						<div class="col-md">
+							<input type="reset" value="Reset" class="form-control btn btn-outline-danger">
+						</div>
+						<div class="col-md">
+							<input type="submit" value="Subscribe" class="form-control btn btn-outline-success">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-md card border rounded shadow mx-2 h-100">
+			<div class="card-body">
+				<h3 class="bg-success text-light p-2 border rounded text-center">Login</h3>
+				<form>
+					<input type="text" name="usname" class="form-control my-3" placeholder="Enter Username">
+					<input type="password" name="pwd" class="form-control my-3" placeholder="Enter Password">
+					<a href="#" class="btn btn-outline-info btn-block">Forgot Password</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

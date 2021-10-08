@@ -1,0 +1,17 @@
+{% extends 'ty/header.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<div class="card-body">
+			<h3 class="bg-warning text-light border rounded border-info p-2">Employee Record: {{em.id}}</h3>
+			<div>
+				<h4>Employee Name: <span class="text-danger">{{em.ename}}</span></h4>
+				<h4>Age: {{em.eage}}</h4>
+				<h4>Username: {{em.eusname}}</h4>
+				<h4>EmailId: {{em.eemail}}</h4>
+			</div>
+			<a href="{% url 'op' %}" class="btn btn-outline-secondary border rounded btn-block">Back to Main</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

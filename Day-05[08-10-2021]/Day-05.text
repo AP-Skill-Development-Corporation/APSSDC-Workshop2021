@@ -1,0 +1,47 @@
+Day-05[08-10-2021]:
+==================
+	Good Evening to All...
+
+	Create
+	Read
+	Update
+	Delete
+
+	Update:
+	=======
+
+	g = classname.objects.get(fieldname=value)
+	g.fieldname = value
+	g.save()
+
+	j = classname.objects.get(fieldname=value)
+	j.fieldanme=value
+	
+	Delete:
+	=======
+
+	y = classname.objects.get(fieldname=value)
+	y.delete()
+
+	y = classname.objects.filter(fieldname=value).delete()
+
+	y = classname.objects.all().delete()
+
+
+	url => views => template => views => template
+
+	url => views => templates => views => models => views => template
+
+
+	redirect():
+	===========
+	redirect('urlname/')
+
+	DTL Loop:
+	=========
+	{% for iterationvariable in iterator %}
+		//stmnts
+		{{iterationvariable.fieldname}}
+	{% endfor %}
+
+
