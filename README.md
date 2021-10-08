@@ -26,3 +26,8 @@
   - ORM Queries execution in shell
   - Create and Read Operations for sample model class
   - Recording Video Link [Day-04](https://transcripts.gotomeeting.com/#/s/f0ffea710133737f163e18b7a1dac0ca11cf98724c9be2056b70de303c54d7c6)
+
+## Day-05[08-10-2021]:
+  - Update and Delete in shell
+  - Create,Read and update by using registration form {Basic Process}
+  - Recording Video Link [Day-05](https://transcripts.gotomeeting.com/#/s/335c0131d5c83ac88c815198246c9a47944b00d2f41bd01f7fc307a1f1ed55da)
