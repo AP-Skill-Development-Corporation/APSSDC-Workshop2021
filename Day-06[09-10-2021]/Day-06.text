@@ -1,0 +1,43 @@
+Day-06[09-10-2021]:
+===================
+	Good Evening to All..
+
+	CRUD => .html => models
+
+	Delete: => Confirmation => ?
+
+	forms.py:
+	=========
+
+	Models.py => classname[Tablename]
+	form => automatic => fieldtype,fieldname
+
+
+	Admin:
+	======
+	localhost:8000/admin
+
+	Username,password
+
+	cmd
+	=> server stop
+	=> manage.py createsuperuser
+	=> name
+	=> email => xxxxx
+	=> password => validations
+	=> confirm password => password
+
+
+	urls => views => template => views => models => views => template
+	urls => views => forms => models => forms => views => template => views => model => views => template
+
+	{{h.as_p}} => paragraph
+	{{h.as_ul}} => unorderlist
+	{{h.as_table}} => table
+
+	widgets => Bootstrap styling for a form
+
+	courses
+		ctitle
+
+

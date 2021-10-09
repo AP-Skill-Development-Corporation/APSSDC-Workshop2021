@@ -1,0 +1,18 @@
+{% extends 'ty/header.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<div class="card-body">
+			<h3 class="bg-danger text-light p-2 border rounded">Delete User {{edt.id}}</h3>
+			<form method="post">
+				{% csrf_token %}
+				<h2>Are you Sure you want to Delete {{edt.ename}}?</h2>
+				<div class="row mx-2">
+					<a href="{% url 'op' %}" class="btn btn-outline-danger form-control mx-2 col-sm">No</a>
+					<input type="submit" value="Yes Confirm" class="btn btn-outline-success form-control col-sm mx-2">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

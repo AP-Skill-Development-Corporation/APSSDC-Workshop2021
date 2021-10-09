@@ -1,0 +1,60 @@
+{% extends 'ty/header.html' %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+	<div class="row mx-3">
+		<div class="col-md-3 card mx-2 shadow-lg border rounded h-100">
+			<h3 class="bg-info text-light text-center p-2 border rounded my-2">Add User</h3>
+			<div class="card-body">
+				<form method="post">
+					{% csrf_token %}
+					<div class="row">
+						<!-- <div class="col"> -->
+							<input type="text" name="us" class="form-control col-sm mx-2" placeholder="Enter Username">
+						<!-- </div> -->
+						<!-- <div class="col"> -->
+							<input type="password" name="pd" class="form-control col-sm mx-2" placeholder="Enter Password">
+						<!-- </div> -->
+					</div>
+					<div class="row my-2">
+						<input type="text" name="na" class="form-control col-sm-7 mx-2" placeholder="Enter Emp Name">
+						<input type="number" name="ag" class="form-control col-sm mx-2" placeholder="Enter Age">
+					</div>
+					<div class="row my-2">
+						<input type="email" name="em" class="form-control mx-2" placeholder="Enter Emailid">
+					</div>
+					<div class="row my-2">
+						<input type="reset" value="Clear" class="form-control col-sm mx-2 btn btn-outline-danger">
+						<input type="submit" value="Create" class="form-control col-sm mx-2 btn btn-outline-success">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-md card mx-2 shadow-lg border rounded h-100">
+			<h3 class="bg-success text-light text-center p-2 border rounded my-2">Display Details</h3>
+			<div class="card-body">
+				<table class="table table-borderless table-hover">
+					<tr class="bg-dark text-light">
+						<td>Sno</td>
+						<td>Employee Name</td>
+						<td>Age</td>
+						<td>Username</td>
+						<td>Emailid</td>
+						<td>Actions</td>
+					</tr>
+					{% for j in e %}
+					<tr>
+						<td>{{forloop.counter}}</td>
+						<td>{{j.ename}}</td>
+						<td>{{j.eage}}</td>
+						<td>{{j.eusname}}</td>
+						<td>{{j.eemail}}</td>
+						<td><a href="{% url 'ev' j.id %}" class="btn btn-outline-info mx-1">View</a><a href="{% url 'ep' j.id %}" class="btn btn-outline-success mx-1">Update</a><a href="{% url 'edl' j.id %}" class="btn btn-outline-danger">Delete</a></td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'ty/header.html' %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<h3 class="bg-info text-light border rounded p-2 mt-3">Employee Record {{et.id}}</h3>
+		<div class="card-body">
+			<form method="post">
+				{% csrf_token %}
+				<div class="row">
+					<input type="text" name="ename" value="{{et.ename}}" class="form-control col-sm mx-2">
+					<input type="number" name="eage" value="{{et.eage}}" class="form-control col-sm mx-2">
+				</div>
+				<div class="row my-2">
+					<input type="text" name="eusname" value="{{et.eusname}}" class="form-control mx-2">
+				</div>
+				<div class="row my-2">
+					<input type="email" name="eemail" value="{{et.eemail}}" class="form-control mx-2">
+				</div>
+				<div class="row">
+					<a href="{% url 'op' %}" class="btn btn-outline-primary form-control col-sm mx-2">Back to Main</a>
+					<input type="submit" value="Update" class="btn btn-outline-success form-control col-sm mx-2">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
