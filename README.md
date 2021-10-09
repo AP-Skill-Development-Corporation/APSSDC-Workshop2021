@@ -31,3 +31,8 @@
   - Update and Delete in shell
   - Create,Read and update by using registration form {Basic Process}
   - Recording Video Link [Day-05](https://transcripts.gotomeeting.com/#/s/335c0131d5c83ac88c815198246c9a47944b00d2f41bd01f7fc307a1f1ed55da)
+
+## Day-06[09-10-2021]:
+  - Delete by using basic process
+  - CRUD Operations by using Forms concept
+  - Recording Video Link [Day-06](https://transcripts.gotomeeting.com/#/s/824a654fa512cb7c1d7254882c1fa46cae26888be19b783a63a0584d3e8efee4)
