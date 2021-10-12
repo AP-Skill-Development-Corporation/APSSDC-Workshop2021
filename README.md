@@ -36,3 +36,8 @@
   - Delete by using basic process
   - CRUD Operations by using Forms concept
   - Recording Video Link [Day-06](https://transcripts.gotomeeting.com/#/s/824a654fa512cb7c1d7254882c1fa46cae26888be19b783a63a0584d3e8efee4)
+
+## Day-08[12-10-2021]:
+  - First Model Field dropdown for second table
+  - Message Concept for CRUD Operations
+  - Recording Video Link [Day-07](https://transcripts.gotomeeting.com/#/s/9cb3bbb796c13da542dd1515f98635bf60d598143512b442327aefcd98ddcfec)
