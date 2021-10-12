@@ -1,0 +1,19 @@
+{% extends 'html/base.html' %}
+{% block title %}SubCourse Delete{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<div class="card-body">
+			<h3 class="bg-danger text-light text-center border rounded p-2">SubCourse Delete</h3>
+			<h4>Are you sure You want to Delete Course {{c.crs}} with SubCourse {{c.sbtitle}}?</h4>
+			<form method="post">
+				{% csrf_token %}
+				<div class="row">
+					<a href="{% url 'sbcrl' %}" class="btn btn-outline-danger col-sm mx-1">No</a>
+					<input type="submit" value="Yes Confirm" class="btn btn-outline-success col-sm mx-1">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

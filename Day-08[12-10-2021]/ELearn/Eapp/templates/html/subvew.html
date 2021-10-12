@@ -1,0 +1,16 @@
+{% extends 'html/base.html' %}
+{% block title %}Subcourse View{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<div class="card-body">
+			<h3 class="bg-info text-light text-center border rounded p-2">SubCourse View</h3>
+			<h4>Course Name: {{g.crs}}</h4>
+			<h4>SubCourse Name: {{g.sbtitle}}</h4>
+			<h4>Price: {{g.price}}</h4>
+			<h4>Description: {{g.desc}}</h4>
+			<a href="{% url 'sbcrl' %}" class="btn btn-outline-secondary btn-block">Back to SubList</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

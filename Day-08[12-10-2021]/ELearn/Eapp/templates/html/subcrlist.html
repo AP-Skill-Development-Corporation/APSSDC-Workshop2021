@@ -1,0 +1,54 @@
+{% extends 'html/base.html' %}
+{% block title %}SubCourse List{% endblock %}
+{% block content %}
+<div class="container-fluid mt-3">
+	{% if messages %}
+	{% for t in messages %}
+	<div class="alert alert-{{t.tags}} alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  {{t}}
+</div>
+	{% endfor %}
+	{% endif %}
+	<div class="row mx-2">
+		<div class="card col-md-4 shadow-lg mx-1 h-100">
+			<div class="card-body">
+				 <h3 class="bg-warning text-light text-center border rounded p-2">Add SubCourses</h3>
+				 <form method="post">
+				 	{% csrf_token %}
+				 	{% for n in r %}
+				 	{{n}}
+				 	{% endfor %}
+				 	<div class="row mx-1">
+				 		<input type="reset" value="Reset" class="btn btn-outline-danger col-sm mx-1">
+				 		<input type="submit" value="Add SubCourse" class="btn btn-outline-success col-sm mx-1">
+				 	</div>
+				 </form>
+			</div>
+		</div>
+		<div class="card col-md shadow-lg mx-1 h-100">
+			<div class="card-body">
+				<h3 class="bg-secondary text-light border rounded p-2">Subcourse list</h3>
+				<table class="table table-borderless">
+					<tr class="bg-dark text-light">
+						<th>sno</th>
+						<th>CourseName</th>
+						<th>SubCourseName</th>
+						<th>Price</th>
+						<th>Operations</th>
+					</tr>
+					{% for i in d %}
+					<tr>
+						<td>{{forloop.counter}}</td>
+						<td>{{i.0}}</td>
+						<td>{{i.1}}</td>
+						<td>{{i.2}}</td>
+						<td><a href="{% url 'sbvw' i.3 %}" class="btn btn-outline-info mx-1">View</a><a href="{% url 'sbcrp' i.3 %}" class="btn btn-outline-success mx-1">Update</a><a href="{% url 'sbdlt' i.3 %}" class="btn btn-outline-danger mx-1">Delete</a></td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

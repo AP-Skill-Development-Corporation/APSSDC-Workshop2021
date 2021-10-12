@@ -1,0 +1,42 @@
+{% extends 'html/base.html' %}
+{% block title %}Course Category List{% endblock %}
+{% block content %}
+<div class="container-fluid mt-4">
+	<div class="row mx-2">
+		<div class="card col-md-4 shadow-lg mx-2 h-100">
+			<div class="card-body">
+				<h3 class="bg-info text-light text-center border rounded p-2">Add Course</h3>
+				<form method="post">
+					{% csrf_token %}
+					{% for j in g %}
+					{{j}}
+					{% endfor %}
+					<div class="row">
+						<input type="reset" value="Reset" class="form-control mx-2 btn btn-outline-danger col-sm">
+						<input type="submit" value="Add Course" class="form-control mx-2 btn btn-outline-success col-sm">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card col-md shadow-lg mx-2 h-100">
+			<div class="card-body">
+				<h3 class="bg-secondary text-center text-light bordder rounded p-2">Display Course List</h3>
+				<table class="table table-borderless table-hover">
+					<tr class="bg-dark text-light">
+						<th>sno</th>
+						<th>Course Title</th>
+						<th>Actions</th>
+					</tr>
+					{% for j in h %}
+					<tr>
+						<td>{{forloop.counter}}</td>
+						<td>{{j.ctitle}}</td>
+						<td><a href="{% url 'crup' j.id %}" class="btn btn-outline-warning mx-1">Update</a><a href="{% url 'crdl' j.id %}" class="btn btn-outline-danger mx-1">Delete</a></td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+Day-08[12-10-2021]:
+===================
+	Good Evening to All...
+
+	Sucourse list:
+	==============
+	sbctitle
+	price
+	desc
+	no of hours
+
+	Messages:
+	=========
+
+	from django.contrib import messages
+
+	color: success,info,warning,debug
+
+	messages.tagname(request,"Something message")
+
+	Display:
+	========
+	{% if messages %}
+	{% for k in messages %}
+		<div class="alert {{k.tags}}">
+			{{k}}
+		</div>
+	{% endfor %}
+	{% endif %}
