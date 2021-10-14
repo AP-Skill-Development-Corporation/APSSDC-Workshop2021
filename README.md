@@ -41,3 +41,9 @@
   - First Model Field dropdown for second table
   - Message Concept for CRUD Operations
   - Recording Video Link [Day-08](https://transcripts.gotomeeting.com/#/s/9cb3bbb796c13da542dd1515f98635bf60d598143512b442327aefcd98ddcfec)
+
+## Day-10[14-10-2021]:
+  - User Login and Logout with dropdown options after login
+  - Extra Fields for user model with user defined fields {AbstractUser}
+  - Profile creation
+  - Recording Video Link [Day-10](https://transcripts.gotomeeting.com/#/s/982d8f0a4ea3868378cca4c79cd32a135396b2569f51efc21f4eeb0aeae1fc6d)
