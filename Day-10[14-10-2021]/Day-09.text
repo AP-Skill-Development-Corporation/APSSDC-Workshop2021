@@ -1,0 +1,42 @@
+Day-09[14-10-2021]:
+===================
+	Good Evening to All...
+
+	Models:
+	Own -> models
+		- Course category
+		- Sub Course
+
+	Existing Model:
+		- User
+		- [age,gender,dob,address,profile image,role]
+		- [role -> student => 1,instructor => 2]
+
+	from dajngo.contrib.auth.models import AbstractUser
+	Existing fields => own fields are added
+
+	class classname(AbstractUser):
+		fieldname = datatype
+
+
+	settings.py
+
+	Auth_user_model = 'appname.classname' 
+
+	AbstractBaseUser => New Fields are accessed
+
+	While using Image in Model we need to install third party package to insert or to retrieve an image from database
+
+	Install => cmd
+			=> pip install pillow
+
+	errors entire table or records => empty
+
+	=> runserver => stop
+	=> db browser => stop
+	=> db.sqlite3 file => remove
+
+	=> cmd
+	=> manage.py makemigrations appname
+	=> manage.py migrate
+	=> runserver
