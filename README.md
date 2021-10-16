@@ -47,3 +47,9 @@
   - Extra Fields for user model with user defined fields {AbstractUser}
   - Profile creation
   - Recording Video Link [Day-10](https://transcripts.gotomeeting.com/#/s/982d8f0a4ea3868378cca4c79cd32a135396b2569f51efc21f4eeb0aeae1fc6d)
+
+## Day-12[16-10-2021]:
+  - Profile Updation
+  - Role Based Access with course lists and subcourses list
+  - Change Password
+  - Recording Video Link [Day-12](https://transcripts.gotomeeting.com/#/s/4a346726a2962915ec88203ffca03faebf71bdbfa32ea39a6ea297faf23a0ce1)
