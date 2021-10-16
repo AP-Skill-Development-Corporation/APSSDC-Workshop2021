@@ -1,0 +1,21 @@
+{% extends 'html/base.html' %}
+{% block title %}SubCourse Update{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<div class="card-body">
+			<h3 class="bg-success text-light text-center p-2 border rounded">SubCourse Update</h3>
+			<form method="post">
+				{% csrf_token %}
+				{% for n in a %}
+				{{n}}
+				{% endfor %}
+				<div class="row">
+					<a href="{% url 'sbcrl' %}" class="btn btn-outline-info col-sm mx-1">Back to SubCourse</a>
+					<input type="submit" value="Update" class="btn btn-outline-secondary col-sm mx-1">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

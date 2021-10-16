@@ -1,0 +1,24 @@
+{% extends 'html/base.html' %}
+{% block title %}Registration{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<div class="card-body">
+			<h3 class="bg-primary text-light text-center p-2 border rounded">Registration</h3>
+			<form method="post">
+				{% csrf_token %}
+				{% for i in h %}
+				<div>
+					{{i}}
+				</div>
+				{% endfor %}
+				<div class="row">
+					<input type="reset" value="Reset" class="form-control mx-2 btn btn-outline-danger col-sm">
+					<input type="submit" value="Subscribe" class="form-control mx-2 btn btn-outline-success col-sm">
+					<a href="{% url 'lg' %}" class="form-control btn btn-outline-info mx-2 col-sm">Existing User</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

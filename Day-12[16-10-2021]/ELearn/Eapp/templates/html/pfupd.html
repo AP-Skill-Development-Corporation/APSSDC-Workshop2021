@@ -1,0 +1,21 @@
+{% extends 'html/base.html' %}
+{% block title %}Profile Update{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<h3 class="bg-info text-light text-center p-2 mt-2 borde rounded">Profile Update</h3>
+		<div class="card-body">
+			<form method="post" enctype="multipart/form-data">
+				{% csrf_token %}
+				{% for i in h %}
+					{{i}}
+				{% endfor %}
+				<div class="row my-2">
+					<a href="{% url 'pf' %}" class="btn btn-outline-warning col-sm mx-1">Back to Profile</a>
+					<input type="submit" value="Update" class="btn btn-outline-success col-sm mx-1">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

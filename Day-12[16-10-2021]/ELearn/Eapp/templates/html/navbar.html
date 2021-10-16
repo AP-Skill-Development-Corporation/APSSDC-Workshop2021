@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="{% url 'hm' %}">E-Learning
+    <!-- <img src="bird.jpg" alt="logo" style="width:40px;"> -->
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ab' %}">Aboutus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ct' %}">Contactus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'rg' %}">Registration</a>
+    </li>
+    {% elif user.usrole == 2 %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'dsh' %}">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cty' %}">CourseList</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'sbcrl' %}">SubCourseList</a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'dsh' %}">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'stcrl' %}" class="nav-link">Courses List</a>
+    {% endif %}
+  </ul>
+  <ul class="navbar-nav ml-auto" style="margin-right: 120px">
+    {% if user.is_authenticated %}
+    <div class="dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+    Welcome {{request.user.username}} <img src="{{request.user.pfimg.url}}" class="rounded-circle" height="25px" width="25px">
+    </a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{% url 'pf' %}">Profile</a>
+      <a class="dropdown-item" href="{% url 'chgpw' %}">ChangePassword</a>
+      <a class="dropdown-item" href="{% url 'lgo' %}">Logout</a>
+    </div>
+    </div>
+    {% else %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'lg' %}">Login</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>

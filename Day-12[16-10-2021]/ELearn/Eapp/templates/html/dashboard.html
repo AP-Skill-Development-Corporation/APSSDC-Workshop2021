@@ -1,0 +1,9 @@
+{% extends 'html/base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="jumbotron">
+		<h3>Welcome {{request.user.username}}</h3>
+	</div>
+</div>
+{% endblock %}

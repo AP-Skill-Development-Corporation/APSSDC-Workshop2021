@@ -1,0 +1,20 @@
+Day-10[16-10-2021]:
+===================
+	Good Evening to All...
+
+	Xampp:
+	=> cmd
+	=> pip install mysqlclient
+	=> xampp
+	=> manage.py runserver
+
+	DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'create your own database in xampp',
+        'USER': 'root',
+        'PASSWORD':'',
+        'HOST':'',
+        'PORT':'',
+    	}
+	}
